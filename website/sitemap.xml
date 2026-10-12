@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://estoniadrivingtheory.netlify.app/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://estoniadrivingtheory.netlify.app/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="et" href="https://estoniadrivingtheory.netlify.app/?lang=et"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://estoniadrivingtheory.netlify.app/?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://estoniadrivingtheory.netlify.app/"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://estoniadrivingtheory.netlify.app/support</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://estoniadrivingtheory.netlify.app/support?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="et" href="https://estoniadrivingtheory.netlify.app/support?lang=et"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://estoniadrivingtheory.netlify.app/support?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://estoniadrivingtheory.netlify.app/support"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://estoniadrivingtheory.netlify.app/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://estoniadrivingtheory.netlify.app/privacy?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="et" href="https://estoniadrivingtheory.netlify.app/privacy?lang=et"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://estoniadrivingtheory.netlify.app/privacy?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://estoniadrivingtheory.netlify.app/privacy"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://estoniadrivingtheory.netlify.app/terms</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://estoniadrivingtheory.netlify.app/terms?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="et" href="https://estoniadrivingtheory.netlify.app/terms?lang=et"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://estoniadrivingtheory.netlify.app/terms?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://estoniadrivingtheory.netlify.app/terms"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+</urlset>

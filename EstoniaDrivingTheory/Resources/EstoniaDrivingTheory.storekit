@@ -1,0 +1,129 @@
+{
+  "identifier" : "EstoniaDrivingTheoryStoreKit",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "999.00",
+      "familyShareable" : false,
+      "internalID" : "1001",
+      "localizations" : [
+        {
+          "description" : "Full lifetime access to all 500+ questions, signs and tests.",
+          "displayName" : "Lifetime Full Access",
+          "locale" : "en_IN"
+        },
+        {
+          "description" : "Full lifetime access to all 500+ questions, signs and tests.",
+          "displayName" : "Lifetime Full Access",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "Täielik eluaegne juurdepääs kõigile 500+ küsimusele ja testile.",
+          "displayName" : "Eluaegne täisjuurdepääs",
+          "locale" : "et"
+        },
+        {
+          "description" : "Полный пожизненный доступ ко всем 500+ вопросам и тестам.",
+          "displayName" : "Пожизненный полный доступ",
+          "locale" : "ru"
+        }
+      ],
+      "productID" : "com.estoniadrivingtheory.premium.lifetime",
+      "referenceName" : "Lifetime Premium",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+    "_failTransactionsEnabled" : false,
+    "_locale" : "en_IN",
+    "_storefront" : "IND",
+    "_storeKitErrors" : [
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Load Products"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Purchase"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Verification"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Store Sync"
+      }
+    ]
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "2001",
+      "localizations" : [
+        {
+          "description" : "Access to all features",
+          "displayName" : "Premium Subscriptions",
+          "locale" : "en_IN"
+        },
+        {
+          "description" : "Access to all features",
+          "displayName" : "Premium Subscriptions",
+          "locale" : "en_US"
+        }
+      ],
+      "name" : "Premium Subscriptions",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "299.00",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "2002",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Full access to all questions and tests, billed monthly.",
+              "displayName" : "Monthly Premium",
+              "locale" : "en_IN"
+            },
+            {
+              "description" : "Full access to all questions and tests, billed monthly.",
+              "displayName" : "Monthly Premium",
+              "locale" : "en_US"
+            },
+            {
+              "description" : "Täielik juurdepääs küsimustele ja testidele, kuutasu.",
+              "displayName" : "Igakuine Premium",
+              "locale" : "et"
+            },
+            {
+              "description" : "Полный доступ ко всем вопросам и тестам, ежемесячно.",
+              "displayName" : "Ежемесячный Премиум",
+              "locale" : "ru"
+            }
+          ],
+          "productID" : "com.estoniadrivingtheory.premium.monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Monthly Premium",
+          "subscriptionGroupID" : "2001",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 3,
+    "minor" : 0
+  }
+}

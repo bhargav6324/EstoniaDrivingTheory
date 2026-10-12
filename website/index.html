@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estonia Driving Theory Test – Category B Practice</title>
+  <meta name="description" content="Prepare for Estonia’s Category B driving theory test with practice questions, realistic mock exams, road signs, explanations and progress tracking.">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://estoniadrivingtheory.netlify.app/">
+  <meta property="og:title" content="Estonia Driving Theory Test – Category B Practice">
+  <meta property="og:description" content="Prepare for Estonia’s Category B driving theory test with practice questions, realistic mock exams, road signs, explanations and progress tracking.">
+  <meta property="og:image" content="/assets/images/app-icon.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Estonia Driving Theory Test – Category B Practice">
+  <meta name="twitter:description" content="Prepare for Estonia’s Category B driving theory test with practice questions, realistic mock exams, road signs, explanations and progress tracking.">
+  <meta name="twitter:image" content="/assets/images/app-icon.png">
+
+  <!-- Favicon & Touch Icons -->
+  <link rel="icon" type="image/png" sizes="64x64" href="/assets/images/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="/" class="header-brand" aria-label="Estonia Driving Theory Home">
+        <img src="/assets/images/app-icon.png" alt="Estonia Driving Theory Icon" class="header-icon" width="38" height="38">
+        <span data-i18n="appName">Estonia Driving Theory</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-links" role="navigation" aria-label="Main Navigation">
+        <a href="#features" class="nav-link" data-i18n="navFeatures">Features</a>
+        <a href="#signs" class="nav-link" data-i18n="navRoadSigns">Road Signs</a>
+        <a href="#mock-exams" class="nav-link" data-i18n="navMockExams">Mock Exams</a>
+        <a href="#progress" class="nav-link" data-i18n="navProgress">Progress</a>
+        <a href="#pricing" class="nav-link" data-i18n="navPricing">Pricing</a>
+        <a href="/support" class="nav-link" data-i18n="navSupport">Support</a>
+      </nav>
+
+      <!-- Header Actions: Language Switcher & App Store CTA -->
+      <div class="header-actions">
+        <!-- Segmented Language Control -->
+        <div class="lang-switcher" role="radiogroup" aria-label="Select Language">
+          <button type="button" class="lang-btn active" data-lang="en" aria-label="English">EN</button>
+          <button type="button" class="lang-btn" data-lang="et" aria-label="Eesti keel">ET</button>
+          <button type="button" class="lang-btn" data-lang="ru" aria-label="Русский язык">RU</button>
+        </div>
+
+        <a href="#" class="btn btn-appstore appstore-btn" id="header-download-btn">
+          <svg viewBox="0 0 170 170" aria-hidden="true"><path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.69-3.08-7.66-7.88-11.9-14.41-6.19-9.5-11-20.2-14.42-32.1-3.42-11.91-5.13-23.3-5.13-34.18 0-14.36 3.59-26.31 10.77-35.85 7.18-9.54 16.14-14.42 26.89-14.64 4.58 0 9.87 1.25 15.87 3.75 6 2.5 10.15 3.8 12.45 3.9 2.07-.11 6.36-1.46 12.87-4.04 6.51-2.58 11.83-3.79 15.97-3.64 11.97.66 21.46 5.21 28.48 13.66-10.45 6.31-15.57 15.02-15.35 26.13.22 8.7 3.54 16 9.96 21.9 6.42 5.9 13.93 9.25 22.52 10.05-2.29 6.86-5.12 14.04-8.51 21.54zM119.22 33.15c0-6.96 2.51-13.66 7.53-20.1 5.01-6.44 11.22-10.79 18.63-13.05.22 1.63.33 3.05.33 4.25 0 6.96-2.58 13.79-7.74 20.48-5.16 6.69-11.37 10.87-18.63 12.54-.11-1.42-.12-2.8-.12-4.12z"/></svg>
+          <span data-i18n="btnDownloadAppStore">Download on the App Store</span>
+        </a>
+
+        <!-- Mobile hamburger toggle button -->
+        <button type="button" class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Backdrop & Menu -->
+  <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
+  <aside class="mobile-nav-drawer" id="mobile-nav-drawer" role="dialog" aria-label="Mobile Navigation">
+    <div class="header-brand">
+      <img src="/assets/images/app-icon.png" alt="App Icon" class="header-icon" width="34" height="34">
+      <span data-i18n="appName">Estonia Driving Theory</span>
+    </div>
+    
+    <div class="lang-switcher" role="radiogroup" aria-label="Select Language">
+      <button type="button" class="lang-btn active" data-lang="en">EN</button>
+      <button type="button" class="lang-btn" data-lang="et">ET</button>
+      <button type="button" class="lang-btn" data-lang="ru">RU</button>
+    </div>
+
+    <nav class="mobile-nav-links">
+      <a href="#features" class="mobile-nav-link" data-i18n="navFeatures">Features</a>
+      <a href="#signs" class="mobile-nav-link" data-i18n="navRoadSigns">Road Signs</a>
+      <a href="#mock-exams" class="mobile-nav-link" data-i18n="navMockExams">Mock Exams</a>
+      <a href="#progress" class="mobile-nav-link" data-i18n="navProgress">Progress</a>
+      <a href="#pricing" class="mobile-nav-link" data-i18n="navPricing">Pricing</a>
+      <a href="/support" class="mobile-nav-link" data-i18n="navSupport">Support</a>
+      <a href="/privacy" class="mobile-nav-link" data-i18n="navPrivacy">Privacy Policy</a>
+      <a href="/terms" class="mobile-nav-link" data-i18n="navTerms">Terms of Use</a>
+    </nav>
+
+    <div style="margin-top: auto;">
+      <a href="#" class="btn btn-appstore appstore-btn" style="width: 100%;">
+        <svg viewBox="0 0 170 170" aria-hidden="true" style="width: 18px; height: 18px; fill: #fff;"><path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.69-3.08-7.66-7.88-11.9-14.41-6.19-9.5-11-20.2-14.42-32.1-3.42-11.91-5.13-23.3-5.13-34.18 0-14.36 3.59-26.31 10.77-35.85 7.18-9.54 16.14-14.42 26.89-14.64 4.58 0 9.87 1.25 15.87 3.75 6 2.5 10.15 3.8 12.45 3.9 2.07-.11 6.36-1.46 12.87-4.04 6.51-2.58 11.83-3.79 15.97-3.64 11.97.66 21.46 5.21 28.48 13.66-10.45 6.31-15.57 15.02-15.35 26.13.22 8.7 3.54 16 9.96 21.9 6.42 5.9 13.93 9.25 22.52 10.05-2.29 6.86-5.12 14.04-8.51 21.54zM119.22 33.15c0-6.96 2.51-13.66 7.53-20.1 5.01-6.44 11.22-10.79 18.63-13.05.22 1.63.33 3.05.33 4.25 0 6.96-2.58 13.79-7.74 20.48-5.16 6.69-11.37 10.87-18.63 12.54-.11-1.42-.12-2.8-.12-4.12z"/></svg>
+        <span data-i18n="btnDownloadAppStore">Download on the App Store</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- Main Content Container -->
+  <main id="main-content">
+    
+    <!-- 4. Hero Section -->
+    <section class="hero-section" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-app-badge">
+            <img src="/assets/images/app-icon.png" alt="App Icon" class="hero-app-badge-icon" width="28" height="28">
+            <span class="hero-app-badge-text" data-i18n="categoryBadge">Category B Examination</span>
+          </div>
+
+          <h1 id="hero-title" class="hero-headline" data-i18n="heroHeadline">
+            Prepare for Estonia’s Category B Driving Theory Test
+          </h1>
+
+          <p class="hero-supporting" data-i18n="heroSupporting">
+            Practice with 500+ questions, realistic mock exams, road signs, detailed explanations, mistake review, and progress tracking.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#" class="btn btn-appstore appstore-btn" id="hero-download-btn">
+              <svg viewBox="0 0 170 170" aria-hidden="true"><path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.69-3.08-7.66-7.88-11.9-14.41-6.19-9.5-11-20.2-14.42-32.1-3.42-11.91-5.13-23.3-5.13-34.18 0-14.36 3.59-26.31 10.77-35.85 7.18-9.54 16.14-14.42 26.89-14.64 4.58 0 9.87 1.25 15.87 3.75 6 2.5 10.15 3.8 12.45 3.9 2.07-.11 6.36-1.46 12.87-4.04 6.51-2.58 11.83-3.79 15.97-3.64 11.97.66 21.46 5.21 28.48 13.66-10.45 6.31-15.57 15.02-15.35 26.13.22 8.7 3.54 16 9.96 21.9 6.42 5.9 13.93 9.25 22.52 10.05-2.29 6.86-5.12 14.04-8.51 21.54zM119.22 33.15c0-6.96 2.51-13.66 7.53-20.1 5.01-6.44 11.22-10.79 18.63-13.05.22 1.63.33 3.05.33 4.25 0 6.96-2.58 13.79-7.74 20.48-5.16 6.69-11.37 10.87-18.63 12.54-.11-1.42-.12-2.8-.12-4.12z"/></svg>
+              <span data-i18n="btnDownloadAppStore">Download on the App Store</span>
+            </a>
+            <a href="#features" class="btn btn-secondary" data-i18n="btnExploreFeatures">
+              Explore Features
+            </a>
+          </div>
+
+          <div class="hero-meta-row">
+            <div class="hero-meta-item">
+              <span class="hero-meta-dot"></span>
+              <span data-i18n="heroCardOfflineReady">100% Offline Ready</span>
+            </div>
+            <div class="hero-meta-item">
+              <span class="hero-meta-dot"></span>
+              <span data-i18n="heroCardQuestionsCount">40 Questions • 30 Mins</span>
+            </div>
+            <div class="hero-meta-item">
+              <span class="hero-meta-dot"></span>
+              <span data-i18n="feature12Title">No Account Required</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Realistic Native iOS App Simulator Preview -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="ios-mockup-card">
+            <div class="ios-island"></div>
+            
+            <div class="mockup-app-header">
+              <div class="mockup-app-title">
+                <img src="/assets/images/app-icon.png" alt="App Icon">
+                <span class="mockup-app-name">Estonia Driving Theory</span>
+              </div>
+              <span class="mockup-tag">Category B</span>
+            </div>
+
+            <!-- Exam Readiness Dashboard Card -->
+            <div class="mockup-gauge-card">
+              <div class="mockup-gauge-info">
+                <h4 data-i18n="progReadinessTitle">Exam Readiness</h4>
+                <div class="readiness-score">94%</div>
+                <p>Pass Probability: High</p>
+              </div>
+              <div class="mockup-circle">94%</div>
+            </div>
+
+            <!-- Interactive Sample Question Card -->
+            <div class="preview-question-card">
+              <div class="preview-q-top">
+                <span>QUESTION 18 / 40</span>
+                <span>FLAG 🚩</span>
+              </div>
+              
+              <div class="preview-q-text">
+                What does this road sign indicate when approaching an intersection?
+              </div>
+
+              <img src="/assets/images/signs/sign-211-priority-road.svg" alt="Priority Road Sign" class="preview-sign-img">
+
+              <div class="preview-options">
+                <button type="button" class="preview-opt-btn" data-correct="false">
+                  <span>A</span> You must give way to traffic from the right
+                </button>
+                <button type="button" class="preview-opt-btn" data-correct="true">
+                  <span>B</span> You have the right of way over intersecting roads
+                </button>
+                <button type="button" class="preview-opt-btn" data-correct="false">
+                  <span>C</span> The road ends in 200 metres
+                </button>
+              </div>
+
+              <div class="preview-explanation">
+                ✓ Correct! Sign 211 (Peatee) grants right of way at successive intersections until sign 212. (Traffic Act § 17)
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Key Features (12 Clean Cards) -->
+    <section id="features" class="features-section" aria-labelledby="features-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="badge-pill" data-i18n="featuresSectionTitle">Key Features</span>
+          <h2 id="features-title" data-i18n="featuresSectionSubtitle">Everything you need to master Estonian traffic laws and pass your exam with confidence.</h2>
+        </header>
+
+        <div class="features-grid">
+          <!-- Card 1 -->
+          <article class="feature-card">
+            <div class="feature-icon-wrapper" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+            </div>
+            <h3 data-i18n="feature1Title">500+ Practice Questions</h3>
+            <p data-i18n="feature1Desc">Comprehensive question bank covering all official Estonian Category B curriculum topics and traffic situations.</p>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="feature-card">
+            <div class="feature-icon-wrapper" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            </div>
+            <h3 data-i18n="feature2Title">Realistic Mock Exams</h3>
+            <p data-i18n="feature2Desc">Simulates the real examination environment: 40 questions, 30-minute timer, question flagging, and detailed scoring.</p>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="feature-card">
+            <div class="feature-icon-wrapper" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><polygon points="12 2 2 22 22 22 12 2"></polygon></svg>
+            </div>
+            <h3 data-i18n="feature3Title">Road Signs</h3>
+            <p data-i18n="feature3Desc">Complete catalogue of Estonian road signs with clear meanings, legal definitions, interactive flashcards, and quizzes.</p>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="feature-card">
+            <div class="feature-icon-wrapper" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+            </div>
+            <h3 data-i18n="feature4Title">Detailed Explanations</h3>
+            <p data-i18n="feature4Desc">Every question includes a comprehensive explanation with direct references to the Estonian Traffic Act (Liiklusseadus).</p>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="feature-card">
+            <div class="feature-icon-wrapper" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
+            </div>
+            <h3 data-i18n="feature5Title">Practice My Mistakes</h3>
+            <p data-i18n="feature5Desc">Targeted revision mode that automatically tracks incorrectly answered questions until you have fully mastered them.</p>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="feature-card">
+            <div class="feature-icon-wrapper" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+            </div>
+            <h3 data-i18n="feature6Title">Weak Topic Practice</h3>
+            <p data-i18n="feature6Desc">Focus your study time where it matters most by targeting the specific traffic rule categories where you score lowest.</p>
+          </article>
+
+          <!-- Card 7 -->
+          <article class="feature-card">
+            <div class="feature-icon-wrapper" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a10 10 0 0 1 10 10"></path></svg>
+            </div>
+            <h3 data-i18n="feature7Title">Exam Readiness</h3>
+            <p data-i18n="feature7Desc">An intelligent indicator calculated from your question mastery, mock test scores, and consistency over time.</p>
+          </article>
+
+          <!-- Card 8 -->
+          <article class="feature-card">
+            <div class="feature-icon-wrapper" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+            </div>
+            <h3 data-i18n="feature8Title">Daily Study Goals</h3>
+            <p data-i18n="feature8Desc">Set manageable daily question targets and build consistent learning streaks to stay on track for test day.</p>
+          </article>
+
+          <!-- Card 9 -->
+          <article class="feature-card">
+            <div class="feature-icon-wrapper" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+            </div>
+            <h3 data-i18n="feature9Title">Progress Tracking</h3>
+            <p data-i18n="feature9Desc">Detailed statistics, category breakdowns, and performance analytics stored safely and privately on your device.</p>
+          </article>
+
+          <!-- Card 10 -->
+          <article class="feature-card">
+            <div class="feature-icon-wrapper" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            </div>
+            <h3 data-i18n="feature10Title">English / Estonian / Russian</h3>
+            <p data-i18n="feature10Desc">Full trilingual support across all questions, explanations, road signs, and menus. Switch languages in one tap.</p>
+          </article>
+
+          <!-- Card 11 -->
+          <article class="feature-card">
+            <div class="feature-icon-wrapper" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><line x1="1" y1="1" x2="23" y2="23"></line><path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"></path><path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"></path><path d="M10.71 5.05A16 16 0 0 1 22.58 9"></path><path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line></svg>
+            </div>
+            <h3 data-i18n="feature11Title">Offline Learning</h3>
+            <p data-i18n="feature11Desc">Study anywhere, anytime. All curriculum content and questions are stored directly on your iPhone and iPad.</p>
+          </article>
+
+          <!-- Card 12 -->
+          <article class="feature-card">
+            <div class="feature-icon-wrapper" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            </div>
+            <h3 data-i18n="feature12Title">No Account Required</h3>
+            <p data-i18n="feature12Desc">Start studying immediately. No sign-up, no email registration, no passwords, and zero personal data collected.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Mock Exam Section -->
+    <section id="mock-exams" class="mock-exam-section" aria-labelledby="mock-exam-title">
+      <div class="container mock-exam-grid">
+        <div class="mock-exam-text">
+          <span class="badge-pill" data-i18n="mockSectionBadge">Category B Simulation</span>
+          <h2 id="mock-exam-title" style="font-size: 2.25rem; font-weight: 800; margin: 16px 0;" data-i18n="mockSectionHeadline">
+            Practice Like the Real Exam
+          </h2>
+          <p style="color: var(--color-text-secondary); font-size: 1.05rem;" data-i18n="mockSectionDesc">
+            Train in conditions that mirror the real Category B theoretical exam. Build speed, discipline, and confidence before booking your test.
+          </p>
+
+          <div class="mock-bullets-list">
+            <div class="mock-bullet-item">
+              <div class="mock-bullet-icon">1</div>
+              <div class="mock-bullet-content">
+                <h4 data-i18n="mockBullet1Title">Category B Preparation</h4>
+                <p data-i18n="mockBullet1Desc">Covers all 12 official syllabus domains from right of way to road conditions and emergency safety.</p>
+              </div>
+            </div>
+
+            <div class="mock-bullet-item">
+              <div class="mock-bullet-icon">2</div>
+              <div class="mock-bullet-content">
+                <h4 data-i18n="mockBullet2Title">Timed Mock Exams</h4>
+                <p data-i18n="mockBullet2Desc">Real-time 30-minute countdown with 40 randomized questions to train time management under pressure.</p>
+              </div>
+            </div>
+
+            <div class="mock-bullet-item">
+              <div class="mock-bullet-icon">3</div>
+              <div class="mock-bullet-content">
+                <h4 data-i18n="mockBullet3Title">Question Navigator</h4>
+                <p data-i18n="mockBullet3Desc">Jump to any question instantly and view your answered, unanswered, and flagged questions at a glance.</p>
+              </div>
+            </div>
+
+            <div class="mock-bullet-item">
+              <div class="mock-bullet-icon">4</div>
+              <div class="mock-bullet-content">
+                <h4 data-i18n="mockBullet4Title">Mark Questions for Review</h4>
+                <p data-i18n="mockBullet4Desc">Flag uncertain questions during the exam and review them before submitting your final answers.</p>
+              </div>
+            </div>
+
+            <div class="mock-bullet-item">
+              <div class="mock-bullet-icon">5</div>
+              <div class="mock-bullet-content">
+                <h4 data-i18n="mockBullet5Title">Review Incorrect Answers</h4>
+                <p data-i18n="mockBullet5Desc">In-depth post-exam breakdown showing exactly why an answer was wrong with legal traffic act explanations.</p>
+              </div>
+            </div>
+
+            <div class="mock-bullet-item">
+              <div class="mock-bullet-icon">6</div>
+              <div class="mock-bullet-content">
+                <h4 data-i18n="mockBullet6Title">Performance Analysis</h4>
+                <p data-i18n="mockBullet6Desc">Track pass/fail outcomes, error counts, and category scores across your exam attempts.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Non-affiliation question disclaimer -->
+          <div class="mock-disclaimer-callout">
+            <strong data-i18n="mockDisclaimer">Original practice questions based on current Estonian traffic rules and exam topics.</strong>
+          </div>
+        </div>
+
+        <!-- Realistic Visual Simulator Card -->
+        <div class="exam-simulator-card" aria-hidden="true">
+          <div class="simulator-top-bar">
+            <div class="simulator-timer">
+              ⏱ 24:18
+            </div>
+            <div class="simulator-q-count">
+              Question 19 / 40
+            </div>
+          </div>
+
+          <div style="font-size: 0.85rem; font-weight: 700; color: var(--color-text-secondary); text-transform: uppercase;">
+            Question Navigator Grid
+          </div>
+
+          <!-- 40 Question Grid simulating app navigator -->
+          <div class="simulator-nav-grid">
+            <span class="grid-cell done">1</span>
+            <span class="grid-cell done">2</span>
+            <span class="grid-cell done">3</span>
+            <span class="grid-cell done">4</span>
+            <span class="grid-cell done">5</span>
+            <span class="grid-cell done">6</span>
+            <span class="grid-cell done">7</span>
+            <span class="grid-cell done">8</span>
+            <span class="grid-cell done">9</span>
+            <span class="grid-cell done">10</span>
+            <span class="grid-cell done">11</span>
+            <span class="grid-cell done">12</span>
+            <span class="grid-cell done flagged">13 🚩</span>
+            <span class="grid-cell done">14</span>
+            <span class="grid-cell done">15</span>
+            <span class="grid-cell done">16</span>
+            <span class="grid-cell done">17</span>
+            <span class="grid-cell done">18</span>
+            <span class="grid-cell active">19</span>
+            <span class="grid-cell">20</span>
+            <span class="grid-cell">21</span>
+            <span class="grid-cell">22</span>
+            <span class="grid-cell">23</span>
+            <span class="grid-cell">24</span>
+            <span class="grid-cell">25</span>
+            <span class="grid-cell">26</span>
+            <span class="grid-cell">27</span>
+            <span class="grid-cell">28</span>
+            <span class="grid-cell">29</span>
+            <span class="grid-cell">30</span>
+            <span class="grid-cell">31</span>
+            <span class="grid-cell">32</span>
+            <span class="grid-cell">33</span>
+            <span class="grid-cell">34</span>
+            <span class="grid-cell">35</span>
+            <span class="grid-cell">36</span>
+            <span class="grid-cell">37</span>
+            <span class="grid-cell">38</span>
+            <span class="grid-cell">39</span>
+            <span class="grid-cell">40</span>
+          </div>
+
+          <div class="simulator-stats-row">
+            <div class="sim-stat-box">
+              <div class="sim-stat-value" style="color: var(--color-success);">35/40</div>
+              <div class="sim-stat-label">Min Passing</div>
+            </div>
+            <div class="sim-stat-box">
+              <div class="sim-stat-value" style="color: var(--color-error);">Max 5</div>
+              <div class="sim-stat-label">Allowed Errors</div>
+            </div>
+            <div class="sim-stat-box">
+              <div class="sim-stat-value" style="color: var(--color-blue);">30:00</div>
+              <div class="sim-stat-label">Time Limit</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Road Signs Section -->
+    <section id="signs" class="road-signs-section" aria-labelledby="signs-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="badge-pill" data-i18n="signsSectionBadge">Visual Catalogue</span>
+          <h2 id="signs-title" data-i18n="signsSectionHeadline">Learn Estonia’s Road Signs</h2>
+          <p data-i18n="signsSectionDesc">Master Estonia's traffic signs with an intuitive visual library, regulatory explanations, and interactive memory tools.</p>
+        </header>
+
+        <!-- Category Filter Tabs -->
+        <div class="sign-filter-bar" role="tablist" aria-label="Sign categories">
+          <button type="button" class="sign-filter-btn active" data-category="all" role="tab" aria-selected="true">All Signs</button>
+          <button type="button" class="sign-filter-btn" data-category="priority" role="tab" aria-selected="false" data-i18n="signCatPriority">Priority</button>
+          <button type="button" class="sign-filter-btn" data-category="prohibitory" role="tab" aria-selected="false" data-i18n="signCatProhibitory">Prohibitory</button>
+          <button type="button" class="sign-filter-btn" data-category="mandatory" role="tab" aria-selected="false" data-i18n="signCatMandatory">Mandatory</button>
+          <button type="button" class="sign-filter-btn" data-category="special" role="tab" aria-selected="false" data-i18n="signCatSpecial">Special Regulation</button>
+        </div>
+
+        <!-- Authentic Estonian Road Signs Display Grid -->
+        <div class="signs-cards-grid">
+          <!-- Sign 211 -->
+          <article class="sign-card" data-category="priority">
+            <div class="sign-card-img-wrapper">
+              <img src="/assets/images/signs/sign-211-priority-road.svg" alt="Sign 211 - Priority Road" width="80" height="80">
+            </div>
+            <span class="sign-code">Sign 211</span>
+            <h4>Peatee (Priority Road)</h4>
+            <p>Grants right of way at un-signaled crossroads along this road until sign 212.</p>
+          </article>
+
+          <!-- Sign 221 -->
+          <article class="sign-card" data-category="priority">
+            <div class="sign-card-img-wrapper">
+              <img src="/assets/images/signs/sign-221-give-way.svg" alt="Sign 221 - Give Way" width="80" height="80">
+            </div>
+            <span class="sign-code">Sign 221</span>
+            <h4>Anna teed (Give Way)</h4>
+            <p>Driver must yield right of way to vehicles approaching on the intersecting road.</p>
+          </article>
+
+          <!-- Sign 222 -->
+          <article class="sign-card" data-category="priority">
+            <div class="sign-card-img-wrapper">
+              <img src="/assets/images/signs/sign-222-stop.svg" alt="Sign 222 - Stop and Give Way" width="80" height="80">
+            </div>
+            <span class="sign-code">Sign 222</span>
+            <h4>Peatu ja anna teed (Stop)</h4>
+            <p>Mandatory full stop before the stop line and give way to all intersecting traffic.</p>
+          </article>
+
+          <!-- Sign 311 -->
+          <article class="sign-card" data-category="prohibitory">
+            <div class="sign-card-img-wrapper">
+              <img src="/assets/images/signs/sign-311-speed-limit-50.svg" alt="Sign 311 - Speed Limit 50" width="80" height="80">
+            </div>
+            <span class="sign-code">Sign 311</span>
+            <h4>Suurim kiirus (Speed Limit 50)</h4>
+            <p>Prohibits driving at a speed greater than 50 km/h in the indicated zone.</p>
+          </article>
+
+          <!-- Sign 331 -->
+          <article class="sign-card" data-category="prohibitory">
+            <div class="sign-card-img-wrapper">
+              <img src="/assets/images/signs/sign-331-no-entry.svg" alt="Sign 331 - No Entry" width="80" height="80">
+            </div>
+            <span class="sign-code">Sign 331</span>
+            <h4>Sissesõidu keeld (No Entry)</h4>
+            <p>Entry prohibited for all vehicles. Commonly used at one-way street exits.</p>
+          </article>
+
+          <!-- Sign 421 -->
+          <article class="sign-card" data-category="mandatory">
+            <div class="sign-card-img-wrapper">
+              <img src="/assets/images/signs/sign-421-roundabout.svg" alt="Sign 421 - Roundabout" width="80" height="80">
+            </div>
+            <span class="sign-code">Sign 421</span>
+            <h4>Ringliiklus (Roundabout)</h4>
+            <p>Traffic flows in the direction of arrows counter-clockwise around the island.</p>
+          </article>
+
+          <!-- Sign 543 -->
+          <article class="sign-card" data-category="special">
+            <div class="sign-card-img-wrapper">
+              <img src="/assets/images/signs/sign-543-pedestrian-crossing.svg" alt="Sign 543 - Pedestrian Crossing" width="80" height="80">
+            </div>
+            <span class="sign-code">Sign 543</span>
+            <h4>Ülekäigurada (Crossing)</h4>
+            <p>Marks an unsignaled pedestrian crossing where drivers must yield to pedestrians.</p>
+          </article>
+        </div>
+
+        <!-- 4 Key Sub-features of Road Signs -->
+        <div class="signs-feature-callout-grid">
+          <div class="sign-feature-box">
+            <h4 data-i18n="signBrowseTitle">Browse Road Signs</h4>
+            <p data-i18n="signBrowseDesc">Explore warning, priority, prohibitory, mandatory, and special regulation signs with official codes.</p>
+          </div>
+          <div class="sign-feature-box">
+            <h4 data-i18n="signMeaningsTitle">Meanings & Explanations</h4>
+            <p data-i18n="signMeaningsDesc">Understand not just what each sign looks like, but the legal rules, speed limits, and obligations it establishes.</p>
+          </div>
+          <div class="sign-feature-box">
+            <h4 data-i18n="signFlashcardsTitle">Road Sign Flashcards</h4>
+            <p data-i18n="signFlashcardsDesc">Reinforce quick recognition with interactive tap-to-flip digital flashcards for fast recall.</p>
+          </div>
+          <div class="sign-feature-box">
+            <h4 data-i18n="signTestsTitle">Sign Tests & Quizzes</h4>
+            <p data-i18n="signTestsDesc">Test your sign knowledge under exam conditions with dedicated road sign recognition challenges.</p>
+          </div>
+        </div>
+
+        <div class="signs-free-notice" data-i18n="signsFreeNote">
+          The complete basic road sign library can be browsed in the free version.
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Progress Section -->
+    <section id="progress" class="progress-section" aria-labelledby="progress-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="badge-pill" data-i18n="progressSectionBadge">Analytics & Insights</span>
+          <h2 id="progress-title" data-i18n="progressSectionHeadline">Track Your Journey to a Driving Licence</h2>
+          <p data-i18n="progressSectionDesc">Comprehensive local analytics keep you informed of your real exam readiness every step of the way.</p>
+        </header>
+
+        <div class="progress-grid">
+          <article class="prog-card">
+            <div class="prog-card-header">
+              <div class="prog-icon-badge">🎯</div>
+            </div>
+            <h3 data-i18n="progReadinessTitle">Exam Readiness</h3>
+            <p data-i18n="progReadinessDesc">Holistic score reflecting your accuracy, recent mock test results, and question bank coverage.</p>
+          </article>
+
+          <article class="prog-card">
+            <div class="prog-card-header">
+              <div class="prog-icon-badge">📊</div>
+            </div>
+            <h3 data-i18n="progMockPerfTitle">Mock Exam Performance</h3>
+            <p data-i18n="progMockPerfDesc">Historical pass/fail trends, average time per test, and mistake reduction charts.</p>
+          </article>
+
+          <article class="prog-card">
+            <div class="prog-card-header">
+              <div class="prog-icon-badge">📅</div>
+            </div>
+            <h3 data-i18n="progDailyActivityTitle">Daily Activity</h3>
+            <p data-i18n="progDailyActivityDesc">Clear calendar and session logs documenting your study sessions and question volumes.</p>
+          </article>
+
+          <article class="prog-card">
+            <div class="prog-card-header">
+              <div class="prog-icon-badge">🏁</div>
+            </div>
+            <h3 data-i18n="progGoalsTitle">Study Goals</h3>
+            <p data-i18n="progGoalsDesc">Customizable daily targets that motivate steady progress without feeling overwhelming.</p>
+          </article>
+
+          <article class="prog-card">
+            <div class="prog-card-header">
+              <div class="prog-icon-badge">🔥</div>
+            </div>
+            <h3 data-i18n="progStreakTitle">Study Streak</h3>
+            <p data-i18n="progStreakDesc">Build learning habits with daily active streak counts to ensure knowledge retention.</p>
+          </article>
+
+          <article class="prog-card">
+            <div class="prog-card-header">
+              <div class="prog-icon-badge">⚠️</div>
+            </div>
+            <h3 data-i18n="progWeakTopicsTitle">Weak Topics</h3>
+            <p data-i18n="progWeakTopicsDesc">Automated diagnosis pinpointing areas that need extra attention before the official test.</p>
+          </article>
+        </div>
+
+        <!-- Mandatory Exam Readiness Disclaimer -->
+        <div class="readiness-disclaimer-box" data-i18n="readinessDisclaimer">
+          Exam Readiness is based on your practice performance and does not guarantee an official exam result.
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Languages Section -->
+    <section class="languages-section" aria-labelledby="languages-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="badge-pill" data-i18n="languagesSectionBadge">Trilingual</span>
+          <h2 id="languages-title" data-i18n="languagesSectionHeadline">Available in 3 Languages</h2>
+          <p data-i18n="languagesSectionDesc">Estonia Driving Theory is natively built to support all three languages spoken by driving learners in Estonia. Switch at any time with a single tap.</p>
+        </header>
+
+        <div class="languages-grid">
+          <div class="lang-card">
+            <div class="lang-flag" aria-hidden="true">🇬🇧</div>
+            <h3 data-i18n="langEnName">English</h3>
+            <p data-i18n="langEnDesc">Complete questions, explanations, and traffic act citations in English.</p>
+          </div>
+
+          <div class="lang-card">
+            <div class="lang-flag" aria-hidden="true">🇪🇪</div>
+            <h3 data-i18n="langEtName">Eesti</h3>
+            <p data-i18n="langEtDesc">Täielikud küsimused, selgitused ja Liiklusseaduse viited eesti keeles.</p>
+          </div>
+
+          <div class="lang-card">
+            <div class="lang-flag" aria-hidden="true">🇷🇺</div>
+            <h3 data-i18n="langRuName">Русский</h3>
+            <p data-i18n="langRuDesc">Полная база вопросов, пояснений и ссылок на закон о дорожном движении на русском.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. Pricing Section -->
+    <section id="pricing" class="pricing-section" aria-labelledby="pricing-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="badge-pill" data-i18n="pricingSectionBadge">Simple Pricing</span>
+          <h2 id="pricing-title" data-i18n="pricingSectionHeadline">Choose the Plan That Fits Your Study</h2>
+          <p data-i18n="pricingSectionDesc">Start learning for free with essential tools, or upgrade to Premium for complete access to the full question bank and advanced analytics.</p>
+        </header>
+
+        <div class="pricing-grid">
+          <!-- FREE PLAN -->
+          <article class="price-card">
+            <div class="price-card-header">
+              <h3 data-i18n="planFreeTitle">Free</h3>
+              <div class="price-amount-row">
+                <span class="price-num" data-i18n="planFreePrice">€0</span>
+                <span class="price-period" data-i18n="planFreePeriod">forever</span>
+              </div>
+            </div>
+
+            <ul class="price-features-list">
+              <li class="price-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="planFreeFeature1">1 full mock exam</span>
+              </li>
+              <li class="price-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="planFreeFeature2">Practice with standard free question set</span>
+              </li>
+              <li class="price-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="planFreeFeature3">Mistake review for free question set</span>
+              </li>
+              <li class="price-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="planFreeFeature4">Full road sign browsing library</span>
+              </li>
+              <li class="price-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="planFreeFeature5">Daily study goals and basic progress tracking</span>
+              </li>
+            </ul>
+
+            <a href="#" class="btn btn-secondary appstore-btn" style="width: 100%;" data-i18n="planFreeCta">Start Free</a>
+          </article>
+
+          <!-- MONTHLY PREMIUM -->
+          <article class="price-card">
+            <div class="price-card-header">
+              <h3 data-i18n="planMonthlyTitle">Monthly Premium</h3>
+              <div class="price-amount-row">
+                <span class="price-num" data-i18n="planMonthlyPrice">€4.99</span>
+                <span class="price-period" data-i18n="planMonthlyPeriod">/ month</span>
+              </div>
+            </div>
+
+            <ul class="price-features-list">
+              <li class="price-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="planPremiumFeature1">Complete question bank (500+ questions)</span>
+              </li>
+              <li class="price-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="planPremiumFeature2">Unlimited realistic mock exams</span>
+              </li>
+              <li class="price-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="planPremiumFeature3">All 12 curriculum topic practice modules</span>
+              </li>
+              <li class="price-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="planPremiumFeature4">Full mistake practice & targeted revision</span>
+              </li>
+              <li class="price-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="planPremiumFeature5">Weak topics diagnosis and practice</span>
+              </li>
+              <li class="price-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="planPremiumFeature6">Road sign interactive flashcards</span>
+              </li>
+              <li class="price-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="planPremiumFeature7">Dedicated road sign test quizzes</span>
+              </li>
+              <li class="price-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="planPremiumFeature8">Complete progress & readiness analytics</span>
+              </li>
+            </ul>
+
+            <a href="#" class="btn btn-secondary appstore-btn" style="width: 100%;" data-i18n="planPremiumCta">Unlock with App Store</a>
+          </article>
+
+          <!-- LIFETIME PREMIUM (FEATURED) -->
+          <article class="price-card featured">
+            <div class="price-card-tag" data-i18n="planLifetimeBadge">Best Value</div>
+            <div class="price-card-header">
+              <h3 data-i18n="planLifetimeTitle">Lifetime Premium</h3>
+              <div class="price-amount-row">
+                <span class="price-num" data-i18n="planLifetimePrice">€7.99</span>
+                <span class="price-period" data-i18n="planLifetimePeriod">one-time payment</span>
+              </div>
+            </div>
+
+            <ul class="price-features-list">
+              <li class="price-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="planPremiumFeature1">Complete question bank (500+ questions)</span>
+              </li>
+              <li class="price-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="planPremiumFeature2">Unlimited realistic mock exams</span>
+              </li>
+              <li class="price-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="planPremiumFeature3">All 12 curriculum topic practice modules</span>
+              </li>
+              <li class="price-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="planPremiumFeature4">Full mistake practice & targeted revision</span>
+              </li>
+              <li class="price-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="planPremiumFeature5">Weak topics diagnosis and practice</span>
+              </li>
+              <li class="price-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="planPremiumFeature6">Road sign interactive flashcards</span>
+              </li>
+              <li class="price-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="planPremiumFeature7">Dedicated road sign test quizzes</span>
+              </li>
+              <li class="price-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="planPremiumFeature8">Complete progress & readiness analytics</span>
+              </li>
+            </ul>
+
+            <a href="#" class="btn btn-primary appstore-btn" style="width: 100%;" data-i18n="planPremiumCta">Unlock with App Store</a>
+          </article>
+        </div>
+
+        <div class="pricing-notes">
+          <p data-i18n="pricingRegionalNote">Prices may vary by country or region. Final pricing is shown in the Apple App Store.</p>
+          <p data-i18n="pricingStoreKitNote">All purchases happen securely through Apple's App Store / StoreKit. No web payments or subscriptions outside Apple.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <div class="footer-brand">
+            <img src="/assets/images/app-icon.png" alt="App Icon" class="footer-icon" width="34" height="34">
+            <span data-i18n="appName">Estonia Driving Theory</span>
+          </div>
+          <p class="footer-tagline" data-i18n="footerTagline">Independent preparation for Estonia’s Category B theory test.</p>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 data-i18n="navFeatures">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="/" data-i18n="btnBackHome">Home</a></li>
+            <li><a href="#features" data-i18n="navFeatures">Features</a></li>
+            <li><a href="#signs" data-i18n="navRoadSigns">Road Signs</a></li>
+            <li><a href="#mock-exams" data-i18n="navMockExams">Mock Exams</a></li>
+            <li><a href="#pricing" data-i18n="navPricing">Pricing</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Legal & Support</h4>
+          <ul class="footer-links-list">
+            <li><a href="/support" data-i18n="navSupport">Support</a></li>
+            <li><a href="/privacy" data-i18n="navPrivacy">Privacy Policy</a></li>
+            <li><a href="/terms" data-i18n="navTerms">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Government Affiliation Disclaimer (Mandatory) -->
+      <div class="footer-disclaimer-box">
+        <p class="footer-disclaimer-text" data-i18n="disclaimerGovernment">
+          Estonia Driving Theory is an independent educational product and is not affiliated with, sponsored by, or endorsed by the Estonian Transport Administration (Transpordiamet) or the Republic of Estonia.
+        </p>
+      </div>
+
+      <div class="footer-bottom">
+        <span data-i18n="copyright">© 2026 Estonia Driving Theory. All rights reserved.</span>
+        
+        <div class="lang-switcher" role="radiogroup" aria-label="Select Footer Language">
+          <button type="button" class="lang-btn active" data-lang="en">English</button>
+          <button type="button" class="lang-btn" data-lang="et">Eesti</button>
+          <button type="button" class="lang-btn" data-lang="ru">Русский</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- App Store Download Modal Dialog -->
+  <div class="modal-overlay" id="download-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-title">
+    <div class="modal-backdrop"></div>
+    <div class="modal-card">
+      <img src="/assets/images/app-icon.png" alt="App Icon" class="modal-icon" width="64" height="64">
+      <h3 id="modal-title" data-i18n="modalTitle">Estonia Driving Theory for iOS</h3>
+      <p data-i18n="modalBody">The app will be available on the Apple App Store. If you are reviewing this page for App Store Connect submission, the download link will be linked to the live app store ID upon release.</p>
+      <div class="modal-btn-row">
+        <button type="button" class="btn btn-secondary" id="modal-close-btn" data-i18n="modalBtnClose">Close</button>
+        <a href="/support" class="btn btn-primary" data-i18n="modalBtnSupport">Contact Support</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="/assets/js/config.js"></script>
+  <script src="/assets/js/translations.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
